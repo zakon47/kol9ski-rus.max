@@ -150,7 +150,6 @@
     $('.navigator').on('click','.navigator__black',function(){
         zak.close('.navigator');
     });
-
 </script>
 
 <!--<script src="/js/menu.js"></script>-->
