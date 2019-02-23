@@ -7,16 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="/css/index.css<?= VER ?>">
-    <link rel="stylesheet" href="/css/sprite/css/sprite.min.css<?= VER ?>">
     <link rel="stylesheet" href="/css/font-awesome.min.css<?= VER ?>">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+<!--    <link rel="stylesheet" href="/css/helpers/owl.carousel.min.css">-->
 
     <!-- <link type="text/css" rel="stylesheet" href="/css/demo.css" />
      <link type="text/css" rel="stylesheet" href="/css/mmenu/jquery.mmenu.all.css" />-->
 
     <script type="text/javascript" src="/js/jquery.min.js"></script>
-    <script src="/js/owl.carousel.min.js"></script>
+<!--    <script src="/js/owl.carousel.min.js"></script>-->
     <!-- <script type="text/javascript" src="/js/mmenu/jquery.mmenu.all.js"></script>
     <script type="text/javascript">
         $(function() {
@@ -48,7 +47,7 @@
         });
     </script>-->
 </head>
-<body>
+<body id="body">
 
 
 <div id="device"></div>
@@ -68,57 +67,59 @@
     </div>
 </div>
 <div class="navigator -open1">
-    <div class="navigator__black"></div>
-    <div class="navigator__wrap">
-        <div class="navigator__logo">loG</div>
-        <div class="navigator__search"></div>
-        <div class="navigator__cart">xxaaaaaaaaaaaa</div>
-        <div class="navigator__phone"></div>
-        <div class="navigator__menu">
-            <ul>
-                <li>xaxa</li>
-                <li>xaxa</li>
-                <li>xaxa</li>
-                <li>xaxa</li>
-                <li>xaxa</li>
-                <li>xaxa</li>
-                <li>xaxa</li>
-                <li>xaxa</li>
-                <li>xaxa</li>
-                <li>xaxa</li>
-                <li>xaxa</li>
-                <li>xaxa</li>
-                <li>xaxa</li>
-                <li>xaxa</li>
-                <li>xaxa</li>
-            </ul>
+    <div class="fx navigator__fx">
+        <div class="navigator__black"></div>
+        <div class="navigator__wrap">
+            <div class="navigator__logo">
+                <a href="/"><i class="svg-icon svg-icon_logo2 svg-icon_logo2-dims"></i></a>
+            </div>
+            <div class="navigator__search">ПОИСК!</div>
+            <div class="navigator__cart">xxaaaaaaaaaaa21a</div>
+            <div class="navigator__phone">
+                <div class="-email">
+                    <a href="mailto:support@email.com">support@email.com</a>
+                </div>
+                <div class="-phone">
+                    <a href="tel:+74952232323">+7 (495) 223-23-23</a>
+                </div>
+            </div>
+            <div class="navigator__menu">
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/catalog">Каталог</a></li>
+                    <li><a href="/dostavka">Доставка и оплата</a></li>
+                    <li><a href="/contacts">Контакты</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
 
+<div class="fx">
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
-    elit. </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
-    elit. </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
-    elit. </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
-    elit. </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
-    elit. </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
-    elit. </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
-    elit. </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
-    elit. </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+</div>
 
 
 <script>
@@ -126,6 +127,7 @@
     (function (ow){
         let win = [];
         function ZakModule() {
+            this.body = $('#body');
             this.add = function(name){
                 return win.push(name);
             };
@@ -135,10 +137,12 @@
             this.open = function(name){
                 this.add(name);                 //добавляем в стек
                 $(name).addClass('-open');      //открываем окно
+                this.body.addClass('ovh');
             };
             this.close = function(name){
                 // this.remove(name);                 //добавляем в стек
                 $(name).removeClass('-open');      //открываем окно
+                this.body.removeClass('ovh');      //открываем окно
             };
         }
         window[ow] = new ZakModule();

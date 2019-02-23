@@ -1,0 +1,43 @@
+body {
+  margin: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.hide {
+  display: none; }
+
+.ct, .fd, .fx {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 320px; }
+
+.fx {
+  max-width: 1140px; }
+
+@media (max-width: 480px) {
+  #zdevice {
+    content: "xxs"; } }
+
+@media (max-width: 768px) and (min-width: 480px) {
+  #zdevice {
+    content: "xs"; } }
+
+@media (max-width: 950px) and (min-width: 768px) {
+  #zdevice {
+    content: "sm"; } }
+
+@media (max-width: 1140px) and (min-width: 950px) {
+  #zdevice {
+    content: "md"; } }
+
+@media (min-width: 1140px) {
+  #zdevice {
+    content: "lg"; } }
+
+/*# sourceMappingURL=../.maps/zlib/zgrid.css.map */
