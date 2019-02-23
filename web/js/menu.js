@@ -163,6 +163,7 @@ function is_touch_device() {
 var device = false;
 
 $(document).ready(function(){
+
 //мобильное устройство ли это?
 
 //Инициализация меню
@@ -371,15 +372,15 @@ $(document).ready(function(){
             }
         }
     });
-    getDevice();
-    imenu_init();
-    optimizator_imenu();
+    // getDevice();
+    // imenu_init();
+    // optimizator_imenu();
 });
 $(document).on('scroll',function(){
-    optimizator_imenu();
+    // optimizator_imenu();
 });
 $(window).resize(function(){
-    getDevice();
-    imenu_init_mob();
-    optimizator_imenu();
+    // getDevice();
+    // imenu_init_mob();
+    // optimizator_imenu();
 });
