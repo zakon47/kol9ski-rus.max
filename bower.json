@@ -1,0 +1,23 @@
+{
+  "name": "tmp",
+  "description": "empty",
+  "main": "index.js",
+  "authors": [
+    "WebDesign Master"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/libs/",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "pushy-reloaded": "^0.9.7",
+    "pushy": "^1.0.0"
+  },
+  "dependencies": {}
+}

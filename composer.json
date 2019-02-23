@@ -1,0 +1,15 @@
+{
+  "autoload": {
+    "psr-0": {
+      "MyApp": "src"
+    },
+    "psr-4": {
+      "Lib\\":"app/lib",
+      "Brocker\\":"app/lib/Brocker"
+    }
+  },
+  "require": {
+    "walkor/workerman": "^3.5",
+    "workerman/workerman": "^3.5"
+  }
+}

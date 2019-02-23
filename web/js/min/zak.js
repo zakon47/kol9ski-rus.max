@@ -1,0 +1,1 @@
+function findOffsetHeight(e){for(var t=0;0==t&&e.parentNode;)e=e.parentNode,t=e.offsetHeight;return t}function getOffsetHeight(e){return e.offsetHeight||e.style.pixelHeight||findOffsetHeight(e)}window.console||(console=new Console);

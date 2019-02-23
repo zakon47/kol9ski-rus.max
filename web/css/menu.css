@@ -1,0 +1,166 @@
+a:focus, input:focus, button:focus, textarea:focus, select:focus {
+  outline-style: none;
+  outline-width: 0px !important;
+  outline-color: none !important; }
+
+input, select, textarea {
+  line-height: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  background: transparent;
+  position: relative; }
+
+textarea {
+  width: 100%;
+  height: 100px;
+  line-height: 100%; }
+
+.btn-default {
+  height: 40px;
+  line-height: 26px;
+  margin-top: 40px;
+  font-size: 2rem;
+  border: 0;
+  border-bottom: 4px solid #138faa;
+  background-color: #159fbd;
+  color: #fff;
+  border-radius: 0;
+  transition: 0.2s; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+.align-top {
+  vertical-align: top; }
+
+.align-mid {
+  vertical-align: middle; }
+
+.align-bot {
+  vertical-align: bottom; }
+
+.ztable, .zt {
+  display: table;
+  width: 100%; }
+  .ztable-row, .zt-row {
+    display: table-row; }
+  .ztable-cell, .zt-cell {
+    display: table-cell;
+    vertical-align: top; }
+  .ztable-cell-m, .zt-cell-m {
+    display: table-cell;
+    vertical-align: middle; }
+
+ul, ol {
+  margin: 0;
+  padding: 0; }
+  ul li, ol li {
+    list-style: none; }
+
+.rel {
+  position: relative; }
+
+body {
+  margin: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.hide {
+  display: none; }
+
+.ct, .fd, .fx {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 320px; }
+
+.fx {
+  max-width: 1250px; }
+
+@media (max-width: 480 - 1px) {
+  .hid-xxs {
+    display: none !important; }
+  .vis-xxs {
+    display: block !important; } }
+
+@media (max-width: 768 - 1px) and (min-width: 480px) {
+  .hid-xs {
+    display: none !important;
+    content: 'dda'; }
+  .vis-xs {
+    display: block !important; } }
+
+@media (max-width: 950 - 1px) and (min-width: 768px) {
+  .hid-sm {
+    display: none !important;
+    content: 'dda'; }
+  .vis-sm {
+    display: block !important; } }
+
+@media (max-width: 1250 - 1px) and (min-width: 950px) {
+  .hid-md {
+    display: none !important;
+    content: 'dda'; }
+  .vis-md {
+    display: block !important; } }
+
+@media (min-width: 1250px) {
+  .hid-lg {
+    display: none !important; }
+  .vis-lg {
+    display: block !important; } }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("/fonts/icomoon/icomoon.eot?ujf2n6");
+  src: url("/fonts/icomoon/icomoon.eot?ujf2n6#iefix") format("embedded-opentype"), url("/fonts/icomoon/icomoon.ttf?ujf2n6") format("truetype"), url("/fonts/icomoon/icomoon.woff?ujf2n6") format("woff"), url("/fonts/icomoon/icomoon.svg?ujf2n6#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-mail-envelope-open:before {
+  content: "\e900"; }
+
+.icon-chat_bubble:before {
+  content: "\e0ca"; }
+
+.icon-personal_video:before {
+  content: "\e63b"; }
+
+.icon-phone_iphone:before {
+  content: "\e325"; }
+
+.icon-reorder:before {
+  content: "\e8fe"; }
+
+.icon-verified_user:before {
+  content: "\e8e8"; }
+
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  background-color: #f7f9fb;
+  font-size: 15px; }
+
+.img-responsive {
+  display: block;
+  max-width: 100%; }

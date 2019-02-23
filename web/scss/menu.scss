@@ -1,0 +1,27 @@
+﻿//@import "slick";
+//@import "normalize";
+@import "base";
+@import "zlib/zgrid";
+//@import "ui-slider";
+@import "icomoon/icon";
+//@import "sprite/sprite";
+//@import "sprite/css/sprite";
+
+
+//$font: 'ProximaNovaCond';
+$font: Roboto;
+$font2: '__Museo Sans Cyrl_5';
+
+body{
+    font-family: $font, Arial, Helvetica, sans-serif;
+    background-color: #f7f9fb;
+    font-size: 15px;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+}
+
+
+
+
