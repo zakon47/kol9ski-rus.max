@@ -2,6 +2,16 @@
 	background: url("../../svg/sprite.svg") no-repeat;
 }
 
+.svg-icon_cart {
+	@extend %svg-common;
+	background-position: 0 99.0811638591118%;
+}
+
+.svg-icon_cart-dims {
+	width: 36.2px;
+	height: 31.7px;
+}
+
 .svg-icon_logo {
 	@extend %svg-common;
 	background-position: 0 0;
@@ -12,13 +22,13 @@
 	height: 33px;
 }
 
-.svg-icon_logo2 {
+.svg-icon_volna {
 	@extend %svg-common;
-	background-position: 0 100%;
+	background-position: 0 50.535987748851454%;
 }
 
-.svg-icon_logo2-dims {
-	width: 121px;
-	height: 33px;
+.svg-icon_volna-dims {
+	width: 89.6px;
+	height: 31.7px;
 }
 

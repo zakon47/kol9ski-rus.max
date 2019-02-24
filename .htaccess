@@ -1,0 +1,12 @@
+php_value register_argc_argv 1
+
+<Files *.ini>
+Order deny,allow
+Deny from all
+</Files>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule  ^$ public_html/    [L]
+    RewriteRule  ((?s).*) public_html/$1 [L]
+</IfModule>
