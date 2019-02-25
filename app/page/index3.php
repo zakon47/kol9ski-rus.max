@@ -230,15 +230,15 @@
             console.log(1111);
         };
         window[ow] = new ZakModule();
-    })('zak');
-    zak.init({
+    })('zak2');
+    zak2.init({
         // lazy: document.getElementById('body')
         lazy: document.querySelectorAll('.lazy-wrap')
     });
 
-    console.log(zak.device);
+    console.log(zak2.device);
     addEventListener('resize', function(){
-        console.log(zak.device);
+        console.log(zak2.device);
     });
     // console.log(zak.lazy.list());
     // zak.lazy(document.querySelectorAll('.lazy-wrap2'));

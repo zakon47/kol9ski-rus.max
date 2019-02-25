@@ -17,7 +17,8 @@ var domain = "kol9ski-rus.max",
     svgSprite = require('gulp-svg-sprite'),			//генерируем спрайт
     svgmin = require('gulp-svgmin'),					//минифицируем спрайт (каждый)
     cheerio = require('gulp-cheerio'),				//чистим от лишних тегов
-    replace = require('gulp-replace');				//дочищаем + убираем баг
+    replace = require('gulp-replace'),
+    spritesmith = require('gulp.spritesmith');				//дочищаем + убираем баг
 
 
 // gutil          = require('gulp-util' ),				// используется для вывода цветных сообщений на экран
@@ -54,6 +55,10 @@ var path = {
         'public': "./src/scss/",
         'from2': "./src/svg/*.svg",
         'public2': "./public_html/svg/",
+    },
+    imgsprite: {
+        'from': "./src/img-sprite/**/*.png",
+        'public': "./src/scss/img/",
     },
     scss: {
         'from': "./src/scss/**/*.scss",
@@ -165,6 +170,16 @@ gulp.task('rm', function () {
     return gulp.src(path.rm, {read: false })
         .pipe(rm());
 });                     //переносим fonts
+gulp.task('img-sprite', function () {
+    return gulp.src(path.imgsprite.from)
+        .pipe(spritesmith({
+            imgName: '../../img/sprite/sprite.png',
+            cssName: 'sprite.scss',
+            padding: 2
+        }))
+        .pipe(rename({suffix: '', prefix: '_'}))
+        .pipe(gulp.dest(path.imgsprite.public));
+});
 
 var dirSep = '/';
 gulp.task('svg', function () {
@@ -195,6 +210,7 @@ gulp.task('browser-sync', function () {
 });             //Запуск обновляемый браузер
 gulp.task('watch', function (cb) {
     gulp.parallel(
+        'img-sprite',
         'svg-sprite',
         'svg',
         'imgmin',
@@ -203,6 +219,7 @@ gulp.task('watch', function (cb) {
         'fonts',
         'browser-sync'
     )(cb);
+    gulp.watch(path.svg.from, gulp.series('img-sprite'));
     gulp.watch(path.svg.from, gulp.series('svg-sprite'));
     gulp.watch(path.svg.from2, gulp.series('svg'));
     gulp.watch(path.img.from, gulp.series('imgmin'));

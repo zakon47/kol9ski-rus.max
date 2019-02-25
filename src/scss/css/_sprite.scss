@@ -4,7 +4,7 @@
 
 .svg-icon_cart {
 	@extend %svg-common;
-	background-position: 0 99.0811638591118%;
+	background-position: 28.44141069397042% 87.08133971291865%;
 }
 
 .svg-icon_cart-dims {
@@ -22,13 +22,43 @@
 	height: 33px;
 }
 
+.svg-icon_play {
+	@extend %svg-common;
+	background-position: 0 99.53125%;
+}
+
+.svg-icon_play-dims {
+	width: 50px;
+	height: 50px;
+}
+
+.svg-icon_podarok {
+	@extend %svg-common;
+	background-position: 0 39.473684210526315%;
+}
+
+.svg-icon_podarok-dims {
+	width: 108px;
+	height: 94.4px;
+}
+
+.svg-icon_romb {
+	@extend %svg-common;
+	background-position: 99.42481511914544% 0;
+}
+
+.svg-icon_romb-dims {
+	width: 90.3px;
+	height: 90.4px;
+}
+
 .svg-icon_volna {
 	@extend %svg-common;
-	background-position: 0 50.535987748851454%;
+	background-position: 98.85620915032679% 61.748633879781416%;
 }
 
 .svg-icon_volna-dims {
 	width: 89.6px;
-	height: 31.7px;
+	height: 31.6px;
 }
 

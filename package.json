@@ -22,7 +22,8 @@
     "gulp-rm": "^2.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-svg-sprite": "^1.5.0",
-    "gulp-svgmin": "^2.1.0"
+    "gulp-svgmin": "^2.1.0",
+    "gulp.spritesmith": "^6.9.0"
   },
   "dependencies": {
     "gulp-sass-image": "^1.1.0"
